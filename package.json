@@ -4,7 +4,7 @@
   "description": "PRNG based on xxHash",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/acorcutt/xx-prgn.git"
+    "url": "git+https://github.com/acorcutt/xx-prng.git"
   },
   "keywords": [
     "prng",
@@ -14,9 +14,9 @@
   "author": "Anthony Corcutt",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/acorcutt/issues"
+    "url": "https://github.com/acorcutt/xx-prng/issues"
   },
-  "homepage": "https://github.com/acorcutt/xx-prgn",
+  "homepage": "https://github.com/acorcutt/xx-prng",
   "files": [
     "dist",
     "lib"

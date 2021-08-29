@@ -117,6 +117,8 @@ test('Snapshot range', (t) => {
   const A = seeded(0);
   // Note that range(0,0) == 0 is correct!
   for (let n = 0; n < 10; n++) t.snapshot(A.random(range(0, n)));
+  // Ranges should go -ve & float
+  for (let n = 0; n < 10; n++) t.snapshot(A.random(range(-n / 2.53, n * 2.74)));
 });
 
 test('Snapshot clamp', (t) => {

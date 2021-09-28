@@ -1,5 +1,6 @@
 import test from 'ava';
 import seeded from './lib/seeded.js';
+import generator from './lib/generator.js';
 import hash from './lib/hash.js';
 import hash0 from './lib/hash0.js';
 import range from './lib/transforms/range.js';
@@ -187,4 +188,17 @@ test('Test bool transform', (t) => {
   t.is(A.random(bool()), true);
   t.is(A.random(bool()), true);
   t.is(A.random(bool()), false);
+});
+
+test('Generator', (t) => {
+  // Remember to provide an end counter if you want it to stop
+  const A = generator(0, 0, 5);
+
+  // for (const rnd of A) {
+  //   console.log(rnd);
+  // }
+
+  //A.next().value;
+
+  t.snapshot(Array.from(A));
 });

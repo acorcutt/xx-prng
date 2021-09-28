@@ -90,7 +90,7 @@ You can use the internal hash functions directly with your own state or counters
 
 ## Visualization
 
-| xx()          | random()              |
+| xx()          | rnd()              |
 | ------------- | --------------------- |
 | ![xx](xx.png) | ![random](random.png) |
 

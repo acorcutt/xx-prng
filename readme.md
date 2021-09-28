@@ -88,6 +88,22 @@ You can use the internal hash functions directly with your own state or counters
     // Hash of arrays of integers are equal to named functions but slower
     hash3(123,1,2,3) == hash(123,[1,2,3]);
 
+### Generator Function
+
+Use as a generator function
+
+    import generator from 'xx-prng/lib/generator.js';
+    
+    // Provide an end counter or it will go to Infinty
+    Array.from(generator(0,0,5));
+    
+    // As a for .. of
+    for(let r of generator(0,0,3));
+    
+    // next()
+    const G = generator(0,0,3);
+    G.next().value;
+
 ## Visualization
 
 | xx()          | rnd()              |

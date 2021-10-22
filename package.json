@@ -3,7 +3,8 @@
   "version": "0.0.4",
   "description": "PRNG based on xxHash",
   "engines": {
-    "node": ">=10"
+    "node": ">=10",
+    "pnpm": ">=3"
   },
   "repository": {
     "type": "git",
